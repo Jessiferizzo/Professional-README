@@ -33,7 +33,7 @@ const questions = () => {
       {
           type: 'input',
           name: 'description',
-          message: 'Write a description about your project:',
+          message: 'Write short description about what was your motivation, why did you build this project, what problem does it solve, what did you learn?',
       },
       {
         type: 'input',
@@ -60,7 +60,7 @@ const questions = () => {
       {
         type: 'input',
         name: 'repo',
-        message: 'What is the link to your github repo?',
+        message: 'What is the link to this projects github repo?',
       },
       {
         type: 'input',
