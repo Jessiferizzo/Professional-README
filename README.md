@@ -2,7 +2,7 @@
   <h1 align="center"> READ ME EAT ME </h1>
 
   ## Description
-  doodoo
+  make read mes
 
   ## Table of Contents
   * [Deployment](#deployment)
@@ -13,12 +13,12 @@
   * [Questions](#questions)
   
   ## Deployment
-  [Project Repo](skip)
+  [Project Repo](https://github.com/Jessiferizzo/Professional-README.git)
 
-  [Project Site](skip)
+  [Project Site](https://github.com/Jessiferizzo/Professional-README.git)
 
   ### Built With:
-  Node
+  
   
   ## Installation 💾 
   npm install
