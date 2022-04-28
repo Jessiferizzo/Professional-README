@@ -6,11 +6,11 @@
 
   ## Table of Contents
   * [Deployment](#deployment)
-  * [Installation](#installation)
+  * [Installation](#installation-💾)
   * [Usage](#usage)
   * [License](#license)
   * [Tests](#tests)
-  * [Questions](#questions)
+  * [Questions](#questions-📫)
   
   ## Deployment
   [Project Repo](https://github.com/Jessiferizzo/Professional-README.git)
@@ -41,7 +41,7 @@
   
   ## Questions 📫
   Please contact me using the following links:
-  
+
   [GitHub](https://github.com/jessiferizzo)
 
   [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com)
