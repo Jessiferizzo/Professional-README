@@ -1,5 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util= require ('util');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const writeFileAsync = util.promisify(fs.writeFile);
 
 
 // TODO: Include packages needed for this application
@@ -14,7 +17,7 @@ const questions = () => {
       },
       {
         type: 'input',
-        name: 'github',
+        name: 'githubname',
         message: 'What is your GitHub username?',
       },
       {
@@ -49,6 +52,12 @@ const questions = () => {
         choices: ['MIT', 'BSD', 'GNU public license','none']
       },
       {
+        type: 'checkbox',
+        name: 'languages',
+        message: 'What did you build this project with?',
+        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+      },
+      {
         type: 'input',
         name: 'repo',
         message: 'What is the link to your github repo?',
@@ -68,86 +77,60 @@ const questions = () => {
         name: 'tests',
         message: 'What are the test instructions?',
       },
-    ]);
-}
-console.log('questions ran!'); 
+      {
+        type: 'input',
+        name: 'acknowledgements',
+        message: 'Who did you want to acknowledge?',
+      },
+    ])
+};
+
+/*generateMarkdown(); 
+console.log('ran markdown');
+
+questions().then((data) => writeToFile (generatedREADME,
+generateMarkdown(data))) 
+.then(() => console.log ('Successfully wrote README'))
+.catch((err) => console.log(err));*/
+
+async function init() {
+    try {
+        // Ask user questions and generate responses
+        const answers = await questions();
+        const generateContent = generateMarkdown(answers);
+        // Write new README.md to dist directory
+        await writeFileAsync('./dist/README.md', generateContent);
+        console.log('✔️  Successfully wrote to README.md');
+    }   catch(err) {
+        console.log(err);
+    }
+  }
+
 // TODO: Create a function to write README file
-/*fs.writeFile('index.html', generatePage(name, github), err => {
-    if (err) throw err;
-  
-    console.log('Portfolio complete! Check out index.html to see the output!');
- }); */
+/*const writeFile = fileContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./dist/generated-README.md', fileContent, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
 
-
-//function writeToFile(fileName, data) {
-/*return `
-# ${data.title}
-# Description
-${data.description}
-## Table of Contents:
-*[Installation](#installation)
-*[Usage](#usage)
-*[License] (#license)
-*[Tests](#tests)
-*[Quesions](#questions)
-
-## Deployment
-${githublink}
-//Demo: https://jessiferizzo.github.io/${data.title}/
-
-![screenshot](./assets/images/Screen%20Shot%202022-04-06%20at%2011.28.13%20PM.png)
-
-
-## Installation
-${data.installation}
-
-  * **Jessica Sisavath**
-    [Github Account](https://github.com/Jessiferizzo)
-
-## Usage
-${usage}
-
-## License
-
-${data.license}
-
-This project is licensed under the MIT License.
-
-Copyright (c) 2022 Jessica Sisavath
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-## Contributing
-${data.contributing}
-
-##Tests
-${data.tests}
-
-##Questions
-${data.questions}
-
-## Acknowledgments
-${data.acknowledgements}
-`;
+            resolve({
+                ok: true,
+                message: 'ReadME created!'
+            });
+        });
+    });
 };*/
 
+
 // TODO: Create a function to initialize app
-function init() {}
+/*function init() {
+    return inquirer.prompt(questions)
+    .then(data => {
+        return data;
+    })
+}*/
 
 // Function call to initialize app
 init();

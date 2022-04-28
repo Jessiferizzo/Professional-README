@@ -1,24 +1,8 @@
-const fs = require('fs');
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-//function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-//function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-//function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-  <h1 align="center"> ${data.title} </h1>
+  <h1 align="center"> READ ME EAT ME </h1>
 
   ## Description
-  ${data.description}
+  doodoo
 
   ## Table of Contents
   * [Deployment](#deployment)
@@ -29,21 +13,21 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   
   ## Deployment
-  [Project Repo](${data.repo})
+  [Project Repo](skip)
 
-  [Project Site](${data.livesite})
+  [Project Site](skip)
 
   ### Built With:
-  ${data.languages}
+  Node
   
   ## Installation 💾 
-  ${data.installation}
+  npm install
   
   ## Usage
-  ${data.usage}
+  make read mes
   
   ## License
-  * ${data.license}
+  * MIT
   
   This project is licensed under the MIT License.
   
@@ -68,20 +52,16 @@ function generateMarkdown(data) {
   SOFTWARE.
 
   ## Contributing
-  ${data.contributing}
+  none
   
   ## Tests
-  ${data.tests}
+  none
   
   ## Questions 📫
   Please contact me using the following links:
-  [GitHub](https://github.com/${data.githubname})
+  [GitHub](https://github.com/jessiferizzo)
   
-  [Email: ${data.email}](mailto:${data.email})
+  [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com)
   
   ## Acknowledgments
-  ${data.acknowledgements}
-`;
-}
-
-module.exports = generateMarkdown;
+  cats
