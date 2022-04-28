@@ -36,7 +36,7 @@ function generateMarkdown(data) {
   ### Built With:
   ${data.languages}
   
-  ## Installation 💾 
+  ## Installation
   ${data.installation}
   
   ## Usage
@@ -55,9 +55,9 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   
-  ## Questions 📫
+  ## Questions
   Please contact me using the following links:
-  
+
   [GitHub](https://github.com/${data.githubname})
 
   [Email: ${data.email}](mailto:${data.email})

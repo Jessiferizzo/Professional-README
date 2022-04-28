@@ -1,16 +1,16 @@
 
-  <h1 align="center"> READ ME EAT ME </h1>
+  <h1 align="center"> READ ME GENERATOR </h1>
 
   ## Description
-  make read mes
+  Make a README.md file easily, efficiently, and beautifully. Solves the issue of time. 
 
   ## Table of Contents
   * [Deployment](#deployment)
-  * [Installation](#installation-💾)
+  * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
   * [Tests](#tests)
-  * [Questions](#questions-📫)
+  * [Questions](#questions)
   
   ## Deployment
   [Project Repo](https://github.com/Jessiferizzo/Professional-README.git)
@@ -20,11 +20,11 @@
   ### Built With:
   
   
-  ## Installation 💾 
+  ## Installation
   npm install
   
   ## Usage
-  easily make readmes and save time
+  Used to make READMEs faster
   
   ## License
   * MIT
@@ -34,17 +34,17 @@
   Copyright (c) 2022 Jessica Sisavath
   
   ## Contributing
-  none
+  no contributions at this time
   
   ## Tests
-  none
+  no tests at this time
   
-  ## Questions 📫
+  ## Questions
   Please contact me using the following links:
-
+  
   [GitHub](https://github.com/jessiferizzo)
 
   [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com)
   
   ## Acknowledgments
-  cats
+  my cats, always 
