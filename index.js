@@ -4,9 +4,6 @@ const util= require ('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const writeFileAsync = util.promisify(fs.writeFile);
 
-
-// TODO: Include packages needed for this application
-//added inquirer
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt([
@@ -85,13 +82,6 @@ const questions = () => {
     ])
 };
 
-/*generateMarkdown(); 
-console.log('ran markdown');
-
-questions().then((data) => writeToFile (generatedREADME,
-generateMarkdown(data))) 
-.then(() => console.log ('Successfully wrote README'))
-.catch((err) => console.log(err));*/
 
 async function init() {
     try {
@@ -106,31 +96,6 @@ async function init() {
     }
   }
 
-// TODO: Create a function to write README file
-/*const writeFile = fileContent => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile('./dist/generated-README.md', fileContent, err => {
-            if (err) {
-                reject(err);
-                return;
-            }
-
-            resolve({
-                ok: true,
-                message: 'ReadME created!'
-            });
-        });
-    });
-};*/
-
-
-// TODO: Create a function to initialize app
-/*function init() {
-    return inquirer.prompt(questions)
-    .then(data => {
-        return data;
-    })
-}*/
 
 // Function call to initialize app
 init();

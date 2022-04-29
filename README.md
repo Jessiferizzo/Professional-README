@@ -1,9 +1,9 @@
 
-  <h1 align="center"> xx </h1>
+  <h1 align="center"> READ ME GENERATOR </h1>
 
   ## Description
-  xx
-
+  Write READMEs faster and efficiently in order to improve productivity and allocate more time for writing code.
+  
   ## Table of Contents
   * [Site](#site)
   * [Installation](#installation)
@@ -13,39 +13,38 @@
   * [License](#license)
   
   ## Site 
-  [Project Repo](xx)
+  [Project Repo](https://github.com/Jessiferizzo/Professional-README.git)
 
-  [Project Site](xx)
+  [Project Site](https://jessiferizzo.github.io/Professional-README/)
 
   ### Built With:
   
-  
   ## Installation
-  💾  xx
+  💾 
+  npm install
   
   ## Usage
-  xx
+  helps users generate README.md files by answering a series of prompts 
   
   ## Contributing
-  xx
+  seeking help with adding emojis and icons!
   
   ## Tests
-  xx
+  no tests currently
   
   ## Questions
   Please contact me using the following links:
 
-  [GitHub](https://github.com/xx)
+  [GitHub](https://github.com/jessiferizzo)
 
-  [Email: xx](mailto:xx)
-  
+  [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com) 
+
   ## Acknowledgments
-  xx
+  my cats, MIT, class instructors, my bf.
 
   ## License
-  undefined
-  * MIT
+  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+  Read more about MIT here:
+  [MIT](https://opensource.org/licenses/MIT)
 
-  This project is licensed under the MIT License.
-  
   Copyright (c) 2022 Jessica Sisavath

@@ -1,23 +1,47 @@
 const fs = require('fs');
+const licenseArr = ["MIT", "BSD", "GNU", "none"]
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === 'MIT') {
-    return ` ${data.badge}=[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)`;
-  } else (license==='none')
+  if (license===licenseArr[0]){
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)"
+  } else if (license===licenseArr[1]){
+    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+  } else if (license===licenseArr[2]){
+    return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+  } else {
     return '';
+  }
 }
-
-console.log (renderLicenseBadge);
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-//function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license===licenseArr[0]){
+    return `[${licenseArr[0]}](https://opensource.org/licenses/MIT)`
+  } else if (license===licenseArr[1]){
+    return `[${licenseArr[1]}](https://opensource.org/licenses/BSD-3-Clause)`
+  } else if (license===licenseArr[2]){
+    return `[${licenseArr[2]}](https://www.gnu.org/licenses/gpl-3.0)`
+  } else {
+    return ""
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-//function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+    if (license===licenseArr[0]){
+      return `Read more about ${licenseArr[0]} here:`
+    } else if (license===licenseArr[1]){
+      return `Read more about ${licenseArr[1]} here:`
+    } else if (license===licenseArr[2]){
+      return `Read more about ${licenseArr[2]} here:`
+    } else {
+      return ""
+    }
+  }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -26,7 +50,7 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.description}
-
+  
   ## Table of Contents
   * [Site](#site)
   * [Installation](#installation)
@@ -44,7 +68,8 @@ function generateMarkdown(data) {
   ${data.languages}
   
   ## Installation
-  💾  ${data.installation}
+  💾 
+  ${data.installation}
   
   ## Usage
   ${data.usage}
@@ -60,17 +85,16 @@ function generateMarkdown(data) {
 
   [GitHub](https://github.com/${data.githubname})
 
-  [Email: ${data.email}](mailto:${data.email})
-  
+  [Email: ${data.email}](mailto:${data.email}) 
+
   ## Acknowledgments
   ${data.acknowledgements}
 
   ## License
-  ${data.badge}
-  * ${data.license}
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
 
-  This project is licensed under the MIT License.
-  
   Copyright (c) 2022 Jessica Sisavath
 `;
 }
