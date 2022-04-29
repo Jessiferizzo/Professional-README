@@ -21,14 +21,14 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  * [Deployment](#deployment)
+  * [Site](#site)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
   * [Tests](#tests)
   * [Questions](#questions)
+  * [License](#license)
   
-  ## Deployment
+  ## Site 
   [Project Repo](${data.repo})
 
   [Project Site](${data.livesite})
@@ -41,13 +41,6 @@ function generateMarkdown(data) {
   
   ## Usage
   ${data.usage}
-  
-  ## License
-  * ${data.license}
-  
-  This project is licensed under the MIT License.
-  
-  Copyright (c) 2022 Jessica Sisavath
   
   ## Contributing
   ${data.contributing}
@@ -64,6 +57,13 @@ function generateMarkdown(data) {
   
   ## Acknowledgments
   ${data.acknowledgements}
+
+  ## License
+  * ${data.license}
+  
+  This project is licensed under the MIT License.
+  
+  Copyright (c) 2022 Jessica Sisavath
 `;
 }
 

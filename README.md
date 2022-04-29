@@ -2,49 +2,49 @@
   <h1 align="center"> READ ME GENERATOR </h1>
 
   ## Description
-  Make a README.md file easily, efficiently, and beautifully. Solves the issue of time. 
+  doodoo
 
   ## Table of Contents
-  * [Deployment](#deployment)
+  * [Site](#site)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
   * [Tests](#tests)
   * [Questions](#questions)
+  * [License](#license)
   
-  ## Deployment
+  ## Site 
   [Project Repo](https://github.com/Jessiferizzo/Professional-README.git)
 
   [Project Site](https://jessiferizzo.github.io/Professional-README/)
 
   ### Built With:
-  
+  Node
   
   ## Installation
   npm install
   
   ## Usage
-  Used to make READMEs faster
+  make read Mes faster
   
+  ## Contributing
+  no contributions
+  
+  ## Tests
+  none
+  
+  ## Questions
+  Please contact me using the following links:
+
+  [GitHub](https://github.com/jessiferizzo)
+
+  [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com)
+  
+  ## Acknowledgments
+  cats
+
   ## License
   * MIT
   
   This project is licensed under the MIT License.
   
   Copyright (c) 2022 Jessica Sisavath
-  
-  ## Contributing
-  no contributions at this time
-  
-  ## Tests
-  no tests at this time
-  
-  ## Questions
-  Please contact me using the following links:
-  
-  [GitHub](https://github.com/jessiferizzo)
-
-  [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com)
-  
-  ## Acknowledgments
-  my cats, always 
