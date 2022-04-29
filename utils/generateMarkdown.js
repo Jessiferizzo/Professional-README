@@ -2,7 +2,14 @@ const fs = require('fs');
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-//function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license === 'MIT') {
+    return ` ${data.badge}=[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)`;
+  } else (license==='none')
+    return '';
+}
+
+console.log (renderLicenseBadge);
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -37,7 +44,7 @@ function generateMarkdown(data) {
   ${data.languages}
   
   ## Installation
-  ${data.installation}
+  💾  ${data.installation}
   
   ## Usage
   ${data.usage}
@@ -59,8 +66,9 @@ function generateMarkdown(data) {
   ${data.acknowledgements}
 
   ## License
+  ${data.badge}
   * ${data.license}
-  
+
   This project is licensed under the MIT License.
   
   Copyright (c) 2022 Jessica Sisavath
