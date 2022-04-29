@@ -1,10 +1,10 @@
 
   <h1 align="center"> READ ME GENERATOR </h1>
 
-  ## Description
+  # Description
   Write READMEs faster and efficiently in order to improve productivity and allocate more time for writing code.
   
-  ## Table of Contents
+  # Table of Contents
   * [Site](#site)
   * [Installation](#installation)
   * [Usage](#usage)
@@ -12,22 +12,22 @@
   * [Questions](#questions)
   * [License](#license)
   
-  ## Site 
+  # Site 
   [Project Repo](https://github.com/Jessiferizzo/Professional-README.git)
 
   [Project Site](https://jessiferizzo.github.io/Professional-README/)
 
-  ### Built With:
+  ## Built With:
+  Node
   
-  ## Installation
-  💾 
-  npm install
+  # Installation
+  npm install 
   
-  ## Usage
-  helps users generate README.md files by answering a series of prompts 
+  # Usage
+  user will run "node index.js" in terminal and answer a series of questions which will then generate a README.md file based on the answers.
   
   ## Contributing
-  seeking help with adding emojis and icons!
+  seeking help with adding icons and emojis to README! Contact me for details.
   
   ## Tests
   no tests currently
@@ -35,12 +35,11 @@
   ## Questions
   Please contact me using the following links:
 
-  [GitHub](https://github.com/jessiferizzo)
-
+  [GitHub:Jessiferizzo](https://github.com/jessiferizzo)
   [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com) 
 
   ## Acknowledgments
-  my cats, MIT, class instructors, my bf.
+  my bf,cats, MIT licensing, class instructors
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)

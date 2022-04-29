@@ -48,10 +48,10 @@ function generateMarkdown(data) {
   return `
   <h1 align="center"> ${data.title} </h1>
 
-  ## Description
+  # Description
   ${data.description}
   
-  ## Table of Contents
+  # Table of Contents
   * [Site](#site)
   * [Installation](#installation)
   * [Usage](#usage)
@@ -59,19 +59,18 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   * [License](#license)
   
-  ## Site 
+  # Site 
   [Project Repo](${data.repo})
 
   [Project Site](${data.livesite})
 
-  ### Built With:
+  ## Built With:
   ${data.languages}
   
-  ## Installation
-  💾 
+  # Installation
   ${data.installation}
   
-  ## Usage
+  # Usage
   ${data.usage}
   
   ## Contributing
@@ -83,8 +82,8 @@ function generateMarkdown(data) {
   ## Questions
   Please contact me using the following links:
 
-  [GitHub](https://github.com/${data.githubname})
-
+  [GitHub:Jessiferizzo](https://github.com/${data.githubname})
+  
   [Email: ${data.email}](mailto:${data.email}) 
 
   ## Acknowledgments
@@ -95,7 +94,7 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
 
-  Copyright (c) 2022 Jessica Sisavath
+  Copyright (c) 2022 ${data.name}
 `;
 }
 
