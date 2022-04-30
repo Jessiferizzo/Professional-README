@@ -68,10 +68,15 @@ function generateMarkdown(data) {
   ${data.languages}
   
   # Installation
+  💾 
   ${data.installation}
   
   # Usage
   ${data.usage}
+
+  📷
+  
+  🎥
   
   ## Contributing
   ${data.contributing}

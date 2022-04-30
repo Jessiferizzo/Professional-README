@@ -1,10 +1,10 @@
 
-# <h1 align="center"> READ ME GENERATOR </h1>
+  <h1 align="center"> READ ME GENERATOR </h1>
 
-# Description
+  # Description
   This node.js app allows users to generate READMEs efficiently and effectively by answering a series of inquirer prompt questions. 
 
-## User Story
+  ## User Story
   
 ```
 AS A developer
@@ -31,6 +31,7 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
+
   
   # Table of Contents
   * [Site](#site)
@@ -49,22 +50,18 @@ THEN I am taken to the corresponding section of the README
   Node
   
   # Installation
-   💾 
-   
-   `npm install` 
+  💾 
+  `npm install`
   
   # Usage
+  run from terminal `node index.js`
 
-  run in terminal 
+  📷 ![gif of app](./assets/videos/README%20generator%20and%20cat.gif)
   
-  `node index.js`
-
-  📷![gif of app](./assets/videos/README%20generator%20and%20cat.gif)
-
-  🎥[Video Link to README generator usage](https://www.youtube.com/watch?v=KhYwtb_8gLA)
+  🎥 [Video Link to README generator usage](https://www.youtube.com/watch?v=KhYwtb_8gLA)
   
   ## Contributing
-  contact me for contributions
+  contact me for contributions or collabs
   
   ## Tests
   no tests currently
@@ -77,7 +74,7 @@ THEN I am taken to the corresponding section of the README
   ✉️ [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com) 
 
   ## Acknowledgments
-  my cats 
+  my cats, MIT licensing, my great TAs, graders, and classmates
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
