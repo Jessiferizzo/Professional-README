@@ -82,9 +82,9 @@ function generateMarkdown(data) {
   ## Questions
   Please contact me using the following links:
 
-  [GitHub:Jessiferizzo](https://github.com/${data.githubname})
+  👋 [GitHub:Jessiferizzo](https://github.com/${data.githubname})
   
-  [Email: ${data.email}](mailto:${data.email}) 
+  ✉️ [Email: ${data.email}](mailto:${data.email}) 
 
   ## Acknowledgments
   ${data.acknowledgements}

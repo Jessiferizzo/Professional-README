@@ -1,8 +1,36 @@
 
-  <h1 align="center"> READ ME GENERATOR </h1>
+# <h1 align="center"> READ ME GENERATOR </h1>
 
-  # Description
-  Write READMEs faster and efficiently in order to improve productivity and allocate more time for writing code.
+# Description
+  This node.js app allows users to generate READMEs efficiently and effectively by answering a series of inquirer prompt questions. 
+
+## User Story
+  
+```
+AS A developer
+I WANT a README generator
+SO THAT can quickly create a professional README for a new project 
+```
+  
+## Acceptance Criteria
+  
+``` 
+GIVEN a command-line application that accepts user input
+WHEN I am prompted for information about my application repository
+THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+WHEN I enter my project title
+THEN this is displayed as the title of the README
+WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+WHEN I choose a license for my application from a list of options
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+WHEN I enter my GitHub username
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+WHEN I enter my email address
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+WHEN I click on the links in the Table of Contents
+THEN I am taken to the corresponding section of the README
+```
   
   # Table of Contents
   * [Site](#site)
@@ -21,13 +49,22 @@
   Node
   
   # Installation
-  npm install 
+   💾 
+   
+   `npm install` 
   
   # Usage
-  user will run "node index.js" in terminal and answer a series of questions which will then generate a README.md file based on the answers.
+
+  run in terminal 
+  
+  `node index.js`
+
+  📷![gif of app](./assets/videos/README%20generator%20and%20cat.gif)
+
+  🎥[Video Link to README generator usage](https://www.youtube.com/watch?v=KhYwtb_8gLA)
   
   ## Contributing
-  seeking help with adding icons and emojis to README! Contact me for details.
+  contact me for contributions
   
   ## Tests
   no tests currently
@@ -35,11 +72,12 @@
   ## Questions
   Please contact me using the following links:
 
-  [GitHub:Jessiferizzo](https://github.com/jessiferizzo)
-  [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com) 
+  👋 [GitHub:Jessiferizzo](https://github.com/jessiferizzo)
+  
+  ✉️ [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com) 
 
   ## Acknowledgments
-  my bf,cats, MIT licensing, class instructors
+  my cats 
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
