@@ -69,7 +69,7 @@ THEN I am taken to the corresponding section of the README
   ## Questions
   Please contact me using the following links:
 
-  👋 [GitHub:Jessiferizzo](https://github.com/jessiferizzo)
+  :octocat: [GitHub:Jessiferizzo](https://github.com/jessiferizzo)
   
   ✉️ [Email: jsisavath@gmail.com](mailto:jsisavath@gmail.com) 
 
